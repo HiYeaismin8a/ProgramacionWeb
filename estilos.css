@@ -1,4 +1,4 @@
-*{
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
 }
 
 .contenedor{
@@ -22,8 +23,12 @@ body{
 
 .header{
     height: 100vh;
-    /* 02 */
-    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/woman.jpg);
+    /* 02 */ 
+    
+    background-image: linear-gradient(
+       TO RIGHT, hsl(211, 52%, 81%,0.4) 0%, hsl(319, 97%, 77%) 100%
+    ), url(img/cinco.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -62,7 +67,7 @@ body{
     /* 02 */
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     /* 028 */
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(135deg, violet 0%, #764ba2 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -97,8 +102,8 @@ body{
 /* Services */
 
 .subtitulo{
-    color: #9f8ad0;
-    font-size: 40px;
+    color: white;
+    font-size: 80px;
     text-align: center;
     font-weight: 300;
     margin-bottom: 30px;
@@ -143,7 +148,8 @@ body{
 }
 
 .gallery{
-    background: #f2f2f2;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    
 }
 
 .contenedor-galeria{
@@ -151,6 +157,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 30px;
+    border: 20px solid; color: black;
 }
 
 .img-galeria{
@@ -184,7 +191,10 @@ body{
 
 .showImage{
     transform: scale(1);
+    cursor: pointer;
+    
 }
+
 
 .show{
     transform: translate(0);
@@ -196,6 +206,7 @@ body{
     right: 15px;
     width: 40px;
     cursor: pointer;
+    
 }
 
 .experts{
@@ -226,7 +237,7 @@ body{
 }
 
 footer{
-    background: #9f8ad0;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     padding-bottom: 0.1px;
 }
 
@@ -389,3 +400,109 @@ footer{
     }
     
 }
+
+#pointer{
+    cursor:pointer;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrap{
+	width: 1100px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 500px;
+	height: 450px;
+	background: #F29720;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(img/docente.png);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(img/2.jpg);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(img/docente2.png);
+	background-size: cover;
+}
+
+

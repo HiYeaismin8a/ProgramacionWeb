@@ -1,61 +1,508 @@
+<!-- JAZMÍN OCHOA BENITEZ 18401167 -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animación</title>
+    <title>Músic 80 & 90</title>
+    <link rel="icon" type="image/x-icon" href="img/musica.png">
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+   
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
-    
+
+<body >
+
     <header class="header" id="inicio">
         <img class="hamburguer" src="img/hamburguesa.svg" alt="">
         <nav class="menu-navegacion">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicio">Servcio</a>
-                <a href="#galeria">Portafolio</a>
-                <a href="#expertos">Servicios</a>
-                <a href="#footer">Contacto</a>
+            <h5><a href="#inicio">Inicio</a> </h3>
+            <h5> <a href="#servicio">Servicio</a></h3>
+            <h5><a href="#galeria">Portafolio</a></h3>
+            <h5><a href="#expertos">Especializados</a></h3>
+            <h5><a href="#footer">Contacto</a></h3>
+          
         </nav>
         <div class="contenedor head">
-            <h1 class="titulo">Convertimos tus ideas en una realidad</h1>
-            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h1 class="titulo">Estamos más cerca de ti</h1>
+            <p class="copy">Todo en un sólo lugar para ti y nuestros portadores.</p>
         </div>
-        
+
     </header>
     <main>
         <section class="services contenedor" id="servicio">
-            <h2 class="subtitulo">Nuestro servicio</h2>
+            <h1  class="subtitulo">Información</h1>
             <div class="contenedor-servicio">
                 <img src="img/checklist.svg" alt="">
                 <div class="checklist-servicio">
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">1</span>Diseño web</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    <div id= "pointer" class="service">
+                        <script>
+                            function funcionButton1() {
+                                window.open("inicioSesion.html");
+                            }
+                            function funcionButton2() {
+                                window.open("metodoDePago.html");
+                            }
+                            function funcionButton3() {
+                                window.open("TarjetaDeInformacion.html");
+                            }
+                            function funcionButton4() {
+                                window.open("distribucion.html");
+                            }
+                        </script>
+                        <a type="button" onclick="funcionButton1()"> <br> <br>
+                            <h3 style="color:white"; class="n-service"><span class="number">1</span>Datos Personales</h3>
+                        </a>
+                        <p style="color:white"; > Se observará los datos personales del maestro maximino gonzalez gonzalez</p>
                     </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">2</span>Diseño web</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    <div id= "pointer" class="service">
+                        <a type="button" onclick="funcionButton2()">
+                            <h3 style="color:white"; class="n-service"><span class="number">2</span>Métodos de Pago</h3>
+
+                        </a>
+                        <p style="color:white"; > Aquí se observará el espacio para agregar el método de pago de la tarjeta de crédito del profesor.
+                        </p>
                     </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">3</span>Diseño web</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+
+                    <div id= "pointer" class="service">
+                        <a type="button" onclick="funcionButton3()">
+                        <h3 style="color:white"; class="n-service" ;><span class="number">3</span>Información Extra</h3>
+                        </a>
+                        <p style="color:white"; > Aquí se a colocado toda información recolectada para conocer un poco más la trayetoría profesional y gustos personales del docente a tratar.
+                        </p>
                     </div>
+                    
                 </div>
-            </div>
+            </div>          
         </section>
+
+      
+
         <section class="gallery" id="galeria">
             <div class="contenedor">
-                <h2 class="subtitulo">Galeria</h2>
+                <h2  
+                style="color:white"; class="subtitulo">Galeria</h2>
+
+                        <div class="fixed-action-btn">
+                        <a class="btn-floating btn-large red">
+                        <i class="large material-icons">mode_edit</i>
+                        </a>
+                        <ul>
+                        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                        </ul>
+                    </div>
+                
+                    
+
+                    
                 <div class="contenedor-galeria">
-                    <img src="img/uno.jpg" class="img-galeria" alt="Hola">
-                    <img src="img/dos.jpg" class="img-galeria" alt="">
-                    <img src="img/tres.jpg" class="img-galeria" alt="">
-                    <img src="img/cuatro.jpg" class="img-galeria" alt="">
-                    <img src="img/cinco.jpg" class="img-galeria" alt="">
-                    <img src="img/seis.jpg" class="img-galeria" alt="">
+                    
+                    <div class="col s4">
+                        <div class="card ">
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/michel.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Michael Jackson
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=KcpT2l9myDU">1 Hr 17 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Nacido el 29 de agosto de 1958 en Gary, Indiana (Estados Unidos), Michael Joseph Jackson era el séptimo de los nueve hijos de Joseph y Katherine Jackson. Comenzó su carrera siendo sólo un niño de 11 años junto a sus hermanos en los Jackson Five, con quienes lanzó temas de éxito como I Want You Back o ABC.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+                      <div class="col s4">
+                        <div class="card ">
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/madona.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Madona
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=b73P6WSOMs4">28 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Madonna nació y creció en Bay City, Michigan. Proviene de una familia de inmigrantes italianos, sus abuelos paternos eran de Pacentro, Italia, mientras que su madre viene de descendencia francesa canadiense. La cantante tiene dos hermanos mayores, Anthony y Martin, y tres hermanos menores, Paula, Christopher y Melanie.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                      <div class="col s4">
+                        <div class="card ">
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/queen.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Queen
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=j440-D5JhjI">1 Hr 20min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Creado en 1970, el grupo estuvo formado por Freddie Mercury (voz), Brian May (guitarra), Roger Taylor (batería) y John Deacon (bajo). Los orígenes de Queen se remontan al inicio de los sesenta, cuando el joven guitarrista Brian Harold May (nacido en 1947) comenzó a tocar en un grupo semiprofesional llamado 1984.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    
+
+                      <div class="col s4">
+                        <div class="card ">
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/eurimi.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Eurythmics
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=NoSrpMA7ShE">Sweet Dreams</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Eurythmics fue una banda británica de synth pop, originaria de Londres, formada por Annie Lennox (vocalista) y David A. Stewart (compositor) a principios del año 1980. Consiguió durante su existencia un enorme éxito comercial y ha llegado a vender 80 millones de discos en todo el mundo. <br>
+                            Período de actividad	1980-1990
+                            1999-2005
+                            2014
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+        
+                    <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/tears for fears.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Tears for Fears
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=Ye7FKc1JQe4">Shout </a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Origen. Orzabal y Smith se conocieron cuando eran adolescentes en Bath, Somerset, Inglaterra. El dúo se convirtió en músicos de sesión para la banda Neon, donde conocieron al futuro batería de Tears For Fears Manny Elias. <br> Neon también presentó a Pete Byrne y Rob Fisher que se convirtieron en Naked Eyes.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    
+                    <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/oasis.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Oasis
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=8drMdLQboMA">13 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Oasis fue una banda británica formada en 1991 en Manchester. Este grupo alcanzó su pico más alto de popularidad cuando tuvo entre sus filas a los hermanos Liam y Noel Gallagher. Con estos dos músicos, la banda lanzó la canción 'Wonderwall'. En el 2009, debido a problemas internos, Oasis se desintegró.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/nirvana.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Nirvana
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=b5IyoyydtZo">1 Hr 10 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Fundada por el vocalista y compositor Kurt Cobain (este ya había tenido su propia banda, Fecal Matter) y por el bajista Kirst Novoselic, que se habían conocido en el instituto, el grupo dio sus primeros pasos con Bob McFadden a la batería, un proyecto que duraría solo un mes. <br> <BR>
+                            <a href="https://www.biografiasyvidas.com/biografia/n/nirvana.htm" target="_blank"> Más información</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/matchbox.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Matchbox Twenty
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=dmMS9kbV9EI">36 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Matchbox Twenty es una banda de rock alternativo estadounidense originaria de Orlando, Florida. Ha vendido más de 44 millones de discos en todo el mundo con los lanzamientos de Yourself or Someone Like You, Mad Season, More Than You Think You Are y North.</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                   
+                    <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/spice girl.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Spice Girl
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=6TVTZFn0Jf0"> 13 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Para los fans, las 'Spice' eran unas amigas que bailaban juntas y que decidieron probar suerte en el mundo de la música, pero la realidad era bien distinta: fue un grupo confeccionado a medida por Chris Herbert. «Se buscaba una versión femenina de 'Thake That', aunque más descarda», relata el manager en el documental.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/Guns N Roses.webp" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Guns N Roses
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=d3peHFfqrUs">13 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Se formaron en Los Angeles en 1985, cuando se juntaron dos guitarristas Slash e Izzy Stradlin, el bajista Duff McKagan, el batería Steven Adler y el vocalista Axl Rose. Con esta composición, el grupo lanza en 1987 su primer álbum, Appetite for Destruction, bajo el sello Geffen Records.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/BackStreet Boys.webp" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>BackStreet Boys
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=-dd43h3bKKY">1 Hr 08 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Se formaron en Los Angeles en 1985, cuando se juntaron dos guitarristas Slash e Izzy Stradlin, el bajista Duff McKagan, el batería Steven Adler y el vocalista Axl Rose. Con esta composición, el grupo lanza en 1987 su primer álbum, Appetite for Destruction, bajo el sello Geffen Records.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/Ace of Base.webp" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Ace of Base
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=-hqrutD7tvI">21 min De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>El estilo musical de Tech Noir fue variando durante los trabajos de composición que hacían Ulf y Jonas. La banda trazaba su estilo musical utilizando influencias del reggae para ser incluido al ritmo bailable del pop. A inicios de 1991, la agrupación cambió el nombre de Tech Noir a Ace of Base.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/luisMiguel.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Luis Miguel
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=ZNtn1v052t8">2 Hrs 22 min. De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Luis Miguel debutó exitosamente como cantante en la boda de la hija del entonces presidente de México, José López Portillo, el 29 de mayo de 1981, con 11 años de edad,​ gracias al apoyo del entonces jefe de la policía de la Ciudad de México, Arturo Durazo Moreno. <BR> <BR>
+                              Comenzó su carrera musical en México en 1980 cantando en la boda de la hija del presidente nacional mexicano José López Portillo. Ha ganado más de 120 premios a título personal, por sus canciones y álbumes, y es el cantante más joven en recibir un Grammy, con 14 años de edad y también el artista Latino más joven en recibir una estrella en el paseo de Hollywood con 26 años.​ En 1991, la RIAA reconoció las altas ventas de su álbum de 1991 Romance, siendo el tercer álbum de música más vendido en México, y uno de los álbumes en español más vendidos de todos los tiempos. En octubre de 2011 es proclamado como el mejor artista latino de los últimos 25 años según la Revista Billboard.  <BR> <BR>
+                             <a target="_blank" href=" https://www.biografiasyvidas.com/biografia/l/luis_miguel.htm">Más Información</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col s4">
+                        <div class="card ">
+            
+                          <div class="card-image waves-effect waves-block waves-light  black">
+                            <img src="img/sonoraDinamita.png" alt="Hola"  
+                            class="img-galeria"class="opacity">
+                          </div>
+                          
+                          <div class="card-content black"  ;>
+                            <span class="card-title activator" style="color:white";>Sonora Dinamita
+                              <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>
+                              <a href="https://www.youtube.com/watch?v=yCfZwf62gss">1 Hrs 29 min. De éxitos</a>
+                            </p>
+                          </div>
+                
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Historia
+                              <i class="material-icons right">close</i>
+                            </span>
+                            <br>
+                            <p>Su popular canción de 1978, “Se Me Perdió La Cadenita”, logró abrirle de manera definitiva las puertas del mercado mexicano. Desde la década de los 80 se ha caracterizado por acompañarse de grandes vocalistas como Rodolfo Aicardy y Margarita la Diosa de la Cumbia. <br>
+                              es una agrupación mexicana y colombiana exponente de música tropical, principalmente de la cumbia. Se fundó en 1960, en Medellín, Colombia, por iniciativa de Antonio Fuentes (dueño de la casa disquera Discos Fuentes), con la voz líder del fallecido cantante Lucho Argain, naturalizado mexicano. <BR> <BR>
+                             <a target="_blank" href=" https://www.sonoradinamita.com.mx/biografia-sonora-dinamita.php ">Más Información</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
                 </div>
             </div>
         </section>
@@ -63,46 +510,73 @@
             <img src="img/close.svg" alt="" class="close">
             <img src="" alt="" class="agregar-imagen">
         </div>
+
+       
+
         <section class="contenedor" id="expertos">
+            <br><br><br><br><br><br>
             <h2 class="subtitulo">Expertos en:</h2>
             <section class="experts">
                 <div class="cont-expert">
                     <img src="img/pie_chart.svg" alt="">
-                    <h3 class="n-expert">Analytics</h3>
+                    <h3 class="n-expert">Musica Pop Grupal</h3>
                 </div>
                 <div class="cont-expert">
                     <img src="img/search_engine.svg" alt="">
-                    <h3 class="n-expert">SEO</h3>
+                    <h3 class="n-expert">Programa y coordinación</h3>
                 </div>
                 <div class="cont-expert">
                     <img src="img/security.svg" alt="">
-                    <h3 class="n-expert">Security</h3>
+                    <h3 class="n-expert">Seguridad</h3>  
                 </div>
+                
             </section>
         </section>
     </main>
 
+    
     <footer id="footer">
+      
         <div class="contenedor footer-content">
-                <div class="contact-us">
-                    <h2 class="brand">AlexCG Design</h2>
-                    <p>Somos expertos en la creación de tus sueños</p>
-                </div>
-                <div class="social-media">
-                    <a href="./" class="social-media-icon">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                    <a href="./" class="social-media-icon">
-                        <i class='bx bxl-twitter' ></i>
-                    </a>
-                    <a href="./" class="social-media-icon">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                </div>
+           <div class="row">
+            <div class="contact-us col s4">
+              <h2 class="brand" style="font-size: 24px;">JAZMIN OCHOA BENITEZ</h2>
+              <p>Somos expertos en la creación de tus sueños</p>
+          </div>
+          <div class="col s4"> 
+            <img src="img/LOGO.png" alt="Hola" class="img-galeria"class="opacity">
+          </div>
+          <div class="social-media col s4">
+              <a href="https://www.facebook.com/ytzellbenitez" class="social-media-icon">
+                  <i class='bx bxl-facebook'></i>
+              </a>
+              <a href="https://twitter.com/Ochoa2303" class="social-media-icon">
+                  <i class='bx bxl-twitter'></i>
+              </a>
+              <a href="https://www.instagram.com/hiyeaismin/" class="social-media-icon">
+                  <i class='bx bxl-instagram'></i>
+              </a>
+          </div>
+           </div>
         </div>
         <div class="line"></div>
+        <br><br>
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js">
+</script>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left'
+    });
+  });
+
+</script>
 </body>
+
 </html>

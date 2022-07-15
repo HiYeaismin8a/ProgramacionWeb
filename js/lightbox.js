@@ -16,6 +16,11 @@ contenedorLight.addEventListener('click',(e)=>{
         imagenLight.classList.toggle('showImage')
         hamburguer.style.opacity = '1';
     }
+    if(e.target === contenedorLight){
+        imagenes.forEach(imagen =>{
+            imagen.style.display = "block";
+        })
+    }
 })
 
 
@@ -24,4 +29,13 @@ const aparecerImagen = (imagen)=>{
     contenedorLight.classList.toggle('show')
     imagenLight.classList.toggle('showImage')
     hamburguer.style.opacity = '0';
+    imagenes.forEach(imagen =>{
+        imagen.style.display = "none";
+    })
 }
+
+closeLight.addEventListener("click",(e)=>{
+    imagenes.forEach(imagen =>{
+        imagen.style.display = "block";
+    })
+})
